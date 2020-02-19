@@ -8,6 +8,7 @@ import java.util.*;
 public interface IEmpDao {
     List<Emp> selectAll(@Param("ename")String ename);
 
+
     List<Emp> selectByPage(@Param("ename")String ename,@Param("pageStart")int pageStart,@Param("pageSize")int pageSize);
 
     void insert(Emp emp);
